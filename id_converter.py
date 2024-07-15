@@ -33,6 +33,8 @@ class ExcelProcessor:
             output_file_path = os.path.join(ExcelProcessor.new_path, f"filtered_{file}")
 
             df_filtered.to_excel(output_file_path, index=False)
+    
+
 
 # Example usage:
 if __name__ == "__main__":
