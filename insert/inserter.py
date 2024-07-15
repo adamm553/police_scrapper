@@ -3,6 +3,9 @@ import pandas as pd
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from dotenv import load_dotenv, dotenv_values
+
+load_dotenv()
 
 class DataLoader:
     def __init__(self, db_url, folder_path):
@@ -127,7 +130,7 @@ class DataLoader:
 
     def _load_obszary(self):
         obszar_xlsx = os.path.join(self.folder_path, 'a_obszary.xlsx')
-        obszar_df = pd.read_excel(obszar_xlsx)
+        obszar_df = pd.read_excel(os.getenv("PATH"))
 
         for index, row in obszar_df.iterrows():
             existing_obszar = self.session.query(self.models['obszar']).filter_by(id_ob=int(row['id_ob'])).first()
