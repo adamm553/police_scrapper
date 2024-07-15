@@ -36,6 +36,4 @@ class DataScraper:
                         print(f"{key}: Nie pobrano. Kod błędu {response.status_code}")
 
 
-scraper = DataScraper()
-scraper.download_files()
 

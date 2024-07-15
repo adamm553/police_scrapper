@@ -35,8 +35,3 @@ class ExcelProcessor:
             df_filtered.to_excel(output_file_path, index=False)
     
 
-
-# Example usage:
-if __name__ == "__main__":
-    excel_processor = ExcelProcessor()
-    excel_processor.process_excel_files()
