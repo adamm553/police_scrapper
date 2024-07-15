@@ -26,27 +26,22 @@ Installation:
 
 1\. Clone the repository:
 
-   ```
 
    git clone https://github.com/yourusername/your-repository.git
 
    cd your-repository
 
-   ```
 
 2\. Install dependencies:
 
-   ```
 
    pip install -r requirements.txt
 
-   ```
 
 3\. Set up your .env file:
 
    Create a .env file in the root directory of the project with the following variables:
 
-   ```
 
    USER=your_database_user
 
@@ -60,41 +55,30 @@ Installation:
 
    PATH=/path/to/your/data/files
 
-   ```
 
 Usage:
 
 1\. Run the data scraper to download files:
 
-   ```
 
    python scraper.py
 
-   ```
 
 2\. Process Excel files:
 
-   ```
 
    python excel_processor.py
 
-   ```
 
 3\. Replace 'n.d.' values in specific Excel files:
 
-   ```
 
    python nd_replacer.py
 
-   ```
 
 4\. Load processed data into the PostgreSQL database:
 
-   ```
-
    python data_loader.py
-
-   ```
 
 Database Schema:
 
