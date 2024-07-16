@@ -1,0 +1,6 @@
+1. Krótki zarys historyczny projektu.
+2. Źródła danych – sposoby pozyskiwania, przykłady.
+3. Przetwarzanie danych, wykorzystanie mechanizmów i procesów ETL.
+4. Udostępnianie danych klientom końcowym.
+5. Narzędzia, z których korzystamy.
+6. Pytania, szczegółowe zagadnienia, dyskusja.
